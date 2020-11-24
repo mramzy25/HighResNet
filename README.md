@@ -2,10 +2,10 @@
 
 This repo contains the reproduced and adapted work of the paper HighRes-net: [*Recursive Fusion for Multi-Frame Super-Resolution of Satellite Imagery*].(https://arxiv.org/abs/2002.06460)
 
-* *Network*: Contains all the source and configuration files needed to run HighRes-Net. These files have been modified from the original version to be adapted to work with the Virtual Moon Dataset.
-* *Utils*: Contains the utility scripts that were created to automate several processes:
+* **Network**: Contains all the source and configuration files needed to run HighRes-Net. These files have been modified from the original version to be adapted to work with the Virtual Moon Dataset.
+* **Utils**: Contains the utility scripts that were created to automate several processes:
   - *lro_url_download.py*: Reads a list of urls from a CSV file and download the files of those links into a specified directory.
-  - *database*: Contains all the scripts related to the Virtual Moon database creation:
+  - **database**: Contains all the scripts related to the Virtual Moon database creation:
     - *8to16.py*: Converts images from 8 bits to 16 bits.
     - *database.py*: 
     - *lro_image_slicer*: Crops a selected LRO image into small slices after modifying the intensity 3 times to create a validation dataset of a total of 20 LR images for the network.
