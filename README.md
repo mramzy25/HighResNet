@@ -7,7 +7,7 @@ This repo contains the reproduced and adapted work of the paper HighRes-net: [*R
   - *lro_url_download.py*: Reads a list of urls from a CSV file and download the files of those links into a specified directory.
   - **database**: Contains all the scripts related to the Virtual Moon database creation:
     - *8to16.py*: Converts images from 8 bits to 16 bits.
-    - *database.py*: 
+    - *database.py*: Converts into greyscale the images inside every dataset in the directory and includes the clearance maps needed for the 
     - *lro_image_slicer*: Crops a selected LRO image into small slices after modifying the intensity 3 times to create a validation dataset of a total of 20 LR images for the network.
     - *monochannel.py*: Converts images from color (3 channels) to greyscale (1 channel).
     - *slicer.py*: Creates datasets containing one HR and 20 LR images per input
