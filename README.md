@@ -6,7 +6,11 @@ This repo contains the reproduced and adapted work of the paper HighRes-net: [*R
 * *Utils*: Contains the utility scripts that were created to automate several processes:
   - *lro_url_download.py*: Reads a list of urls from a CSV file and download the files of those links into a specified directory.
   - *database*: Contains all the scripts related to the Virtual Moon database creation:
-    - asd
+    - *8to16.py*: Converts images from 8 bits to 16 bits.
+    - *database.py*: 
+    - *lro_image_slicer*: Crops a selected LRO image into small slices after modifying the intensity 3 times to create a validation dataset of a total of 20 LR images for the network.
+    - *monochannel.py*: Converts images from color (3 channels) to greyscale (1 channel).
+    - *slicer.py*: Creates datasets containing one HR and 20 LR images per input
 
 **Additional information**
 * [Weights of the trained network (ESA + VM100, VM1000, ESA)](https://dropit.uni.lu/p/e20qcQPdlZWEi1b29bV1i6SbJjM+DlwlOUC4HtRnB0UdmwyPPDYnDIQX4hVGjPP1Nb)
